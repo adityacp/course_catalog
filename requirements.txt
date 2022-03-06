@@ -1,0 +1,4 @@
+Django==3.2.12
+uwsgi
+gunicorn
+mysqlclient==2.1.0
