@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'course_catalog.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-# set USE_EXTERNAL_DB=true
+# set USE_EXTERNAL_DB=True
 if os.environ.get("USE_EXTERNAL_DB") == "True":
     DATABASES = {
         'default': {

@@ -2,5 +2,5 @@ from django.contrib import admin
 
 from backend.models import Category, Course
 
-admin.register(Category)
-admin.register(Course)
+admin.site.register(Category)
+admin.site.register(Course)
