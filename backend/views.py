@@ -11,11 +11,8 @@ def index(request):
 
 
 def getAllCategories(request):
-    categories = Category.objects.all()
-    category_data = [
-        model_to_dict(model, fields=["name"]) for model in categories
-    ]
-    return JsonResponse({"data": category_data})
+    categories = list(Category.objects.values_list("name", flat=True))
+    return JsonResponse({"data": categories})
 
 
 def getAllCourses(request):
